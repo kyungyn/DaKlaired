@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>KakaoTalk Embed</title>
+<script id="javascript-sdk" src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+</head>
+<body>
+<p><strong>Click the image below</strong> By. Blackcats4567</p>
+<a id="kakao-link-btn" href="javascript:sendLink()">
+  <img
+    src="https://developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"
+  />
+</a>
+<script type="text/javascript">
+ Kakao.init('8e6121439b929712767d40f94d1ce3c2');
+  function sendLink() {
+    Kakao.Link.sendDefault({
+      objectType: 'feed',
+      content: {
+        title: '한형선 🖤 남경연, 저희 결혼합니다.',
+        description: '2023년 9월 9일, Gran Morsi, New York',
+        imageUrl:
+          'https://images.zola.com/049f6069-86fa-4e48-927d-5650d4baae15',
+        link: {
+          mobileWebUrl: 'https://DaKlaired2.quv.kr',
+          webUrl: 'https://DaKlaired2.quv.kr',
+        },
+      },
+      buttons: [
+        {
+          title: '한형선 🖤 남경연, 저희 결혼합니다.',
+          link: {
+            mobileWebUrl: 'https://DaKlaired2.quv.kr',
+            webUrl: 'https://DaKlaired2.quv.kr',
+          },
+        },
+      ],
+    })
+  }
+</script>
+<!-- www.blackcats4567.com -->
+<!-- When clicking on the image/button, the address should be placed in Kakao Developers' Application> Platform> Web to be displayed successfully when clicked. -->
+  </body>
+</html>
